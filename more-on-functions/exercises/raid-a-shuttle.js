@@ -21,11 +21,39 @@ function holdStatus(arr){
 let fuelLevel = 200000;
 let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold', 'water', 'AE-35 unit'];
 
+fuelInspection = function(fuelLevel){
+  let inspectionTank = "";
+  return inspectionTank = fuelLevel - 100000
+}
+console.log(fuelInspection(fuelLevel));
+
+
+let grabBag;
+let inventoryInspection = function(cargoHold, inspectionBag, grabBag) {
+  inspectionBag = ['meal kits', 'space suits', 'first-aid kit','tin foil', 'toy drone', 'water', 'AE-35 unit'];
+  grabBag = [];
+  if (1 + 1 === 2) {
+    grabBag = cargoHold.slice(3, 5);
+    cargoHold = inspectionBag.slice(0);
+  }
+  return cargoHold;
+}
+console.log(inventoryInspection(cargoHold));
+
 console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
+let report;
+let irs = function(fuelLevel, cargoHold, report) {
+  report = `Raided ${fuelInspection(fuelLevel)} kg of fuel from the tanks, and stole ${grabBag[0]} and ${grabBag[1]} from the cargo hold.`
+  return report
+   
+}
+console.log(irs(report));
+
+
 /* Steal some fuel from the shuttle:
- * /
+ */
  
 //a). Define an anonymous function and set it equal to a variable with a normal, non-suspicious name. The function takes one parameter. This will be the fuel level on the shuttle.
 
@@ -36,7 +64,7 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //d). Decide where to best place your function call to gather our new fuel.
 
 /* Next, liberate some of that glorious cargo.
- * /
+ */
 
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
@@ -47,7 +75,7 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //d). Don’t get hasty, matey! Remember to test your function.
 
 /* Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
- * /
+ */
  
 //a). Define a function called irs that can take fuelLevel and cargoHold as arguments.
 	
