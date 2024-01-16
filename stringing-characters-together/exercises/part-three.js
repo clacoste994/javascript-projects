@@ -3,10 +3,18 @@
 let language = 'JavaScript';
 
 //1. Use string concatenation and two slice() methods to print 'JS' from 'JavaScript'
+let theJ = language.slice(0,1);
+let theS = language.slice(4,5);
+let joinJS = theJ.concat(theS);
+console.log(joinJS);
+console.log(theJ + theS);
 
 //2. Without using slice(), use method chaining to accomplish the same thing.
 
+
 //3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
+
+console.log(`The abbreviation for '${language}' is ${language[0]}${language[4]}.`)
 
 //4. Just for fun, try chaining 3 or more methods together, and then print the result.
 
