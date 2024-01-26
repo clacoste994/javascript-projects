@@ -2,6 +2,24 @@
 
 // Part One: Reverse Characters
 
+let chris = 'plop';
+
+let bob = 123;
+
+function reverseCharacters(s) {
+
+    if (typeof (s) === 'string') {
+        return s.split('').reverse().join('');
+    } else if (typeof (s) === 'number') {
+        let reverseNumber = s.toString().split('').reverse().join('');
+        return s = Number(reverseNumber);
+
+    }
+}
+
+//console.log(reverseCharacters(chris));
+//console.log(reverseCharacters(bob));
+
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
@@ -30,7 +48,25 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
+
+
+function doesStuff(a) {
+    let empty = [];
+    for (i = 0; i < a.length; i++) {
+       empty.push(reverseCharacters(a[i]));        
+    }
+    return empty.reverse();
+}
+
+console.log(doesStuff(arrayTest1))
+console.log(doesStuff(arrayTest2))
+console.log(doesStuff(arrayTest3))
+
 // Bonus Missions
+
+/*function newFunction (boop) {
+ if (boop)
+}*/
 
 // 1. Have a clear, descriptive name like funPhrase.
 // 2. Retrieve only the last character from strings with lengths of 3 or less.
