@@ -13,7 +13,22 @@
 <body>
 
 	<form id="searchForm">
-    <!-- TODO: add form elements -->
+		<label for="searchQuery">Search:</label>"
+		<input type="text" id="searchQuery" name="q">
+        
+		<input type="radio" id ="google" name="engine" value="google">
+		<label for="google">Google</label>
+
+		<input type="radio" id="duckDuckGo" name="engine" value="duckDuckGo">
+		<label for="duckDuckGo">DuckDuckGo</label>
+
+		<input type="radio" id="bing" name="engine" value="bing">
+		<label for="bing">Bing</label> 
+
+		<input type="radio" id="ask" name="engine" value="ask">
+		<label for="ask">Ask</label>
+		
+		<input type="submit" value="Go!">
 	</form>
 
 </body>
